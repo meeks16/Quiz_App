@@ -1,0 +1,25 @@
+﻿<Window x:Class="QuizApplication.CreateQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizApplication"
+        mc:Ignorable="d"
+        Title="CreateQuestion" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="lblType" Content="Please select the type of question:" HorizontalAlignment="Left" Margin="50,125,0,0" VerticalAlignment="Top" Width="251"/>
+        <Button x:Name="btnSA" Content="Short Answer" HorizontalAlignment="Left" Margin="50,175,0,0" VerticalAlignment="Top" Width="90" Click="btnSA_Click"/>
+        <Button x:Name="btnTF" Content="True or False" HorizontalAlignment="Left" Margin="211,175,0,0" VerticalAlignment="Top" Width="90" Click="btnTF_Click"/>
+        <Button x:Name="btnMult" Content="Multiple Choice" HorizontalAlignment="Left" Margin="368,175,0,0" VerticalAlignment="Top" Width="90" Click="btnMult_Click"/>
+        <Label x:Name="lblSA" Content="Short Answer" HorizontalAlignment="Left" Margin="50,225,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTF" Content="True or False" HorizontalAlignment="Left" Margin="211,225,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblMult" Content="Multiple Choice" HorizontalAlignment="Left" Margin="368,225,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblQuizName" Content="" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top" Width="251"/>
+        <Label x:Name="lblQuestionNumber" Content="" HorizontalAlignment="Left" Margin="197,73,0,0" VerticalAlignment="Top" Width="104"/>
+        <Button x:Name="btnSubmitQuiz" Content="Submit Quiz" HorizontalAlignment="Left" Margin="368,270,0,0" VerticalAlignment="Top" Width="90" Click="btnSubmitQuiz_Click"/>
+        <Label x:Name="lblSubmitQuiz" Content="Submit Quiz:" HorizontalAlignment="Left" Margin="260,267,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblError" Content="" HorizontalAlignment="Left" Margin="50,267,0,0" VerticalAlignment="Top" Width="183" Foreground="#FFFC0E0E"/>
+        <Label x:Name="lblQNum" Content="Number of questions:" HorizontalAlignment="Left" Margin="50,73,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

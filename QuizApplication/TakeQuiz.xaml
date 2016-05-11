@@ -1,0 +1,43 @@
+﻿<Window x:Class="QuizApplication.TakeQuiz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TakeQuiz" Height="425" Width="525">
+    <Grid HorizontalAlignment="Left" Width="515">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="568*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblQuizName" Content="Questions Types" HorizontalAlignment="Left" Margin="36,63,0,0" VerticalAlignment="Top" Height="26" Width="181"/>
+        <ListBox x:Name="lstBoxQuestions" HorizontalAlignment="Left" Height="175" Margin="36,94,0,0" VerticalAlignment="Top" Width="181" SelectionChanged="lstBoxQuestions_SelectionChanged" ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Q"/>
+                        <TextBlock Text="{Binding questionNumber}"/>
+                        <TextBlock Text=" --- "/>
+                        <TextBlock Text="{Binding questionType}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Content="Score: " HorizontalAlignment="Left" Margin="270,268,0,0" VerticalAlignment="Top" Height="26" Width="58"/>
+        <Button x:Name="btnStartQuiz" Content="Start Quiz" HorizontalAlignment="Left" Margin="142,274,0,0" VerticalAlignment="Top" Width="75" Click="btnStartQuiz_Click" Height="20"/>
+        <Label x:Name="txtProgress" Content="" HorizontalAlignment="Left" Margin="99,317,0,0" VerticalAlignment="Top" Height="26" Width="10"/>
+        <ListView x:Name="lstAnswers" HorizontalAlignment="Left" Height="169" Margin="270,94,0,0" VerticalAlignment="Top" Width="223">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Q#" DisplayMemberBinding="{Binding questionNumber}"/>
+                    <GridViewColumn Header="student answer" DisplayMemberBinding="{Binding studentAnswer}"/>
+                    <GridViewColumn Header="Correct answer" DisplayMemberBinding="{Binding correctAnswer}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Answers for missed questions" HorizontalAlignment="Left" Margin="305,63,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button x:Name="btnQuit" Content="Exit" HorizontalAlignment="Left" Margin="224,351,0,0" VerticalAlignment="Top" Width="75" Click="btnQuit_Click"/>
+        <Label x:Name="lblScore" Content="" HorizontalAlignment="Left" Margin="368,268,0,0" VerticalAlignment="Top" Width="112"/>
+        <Label Content="Hello" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblFirstName" Content="" HorizontalAlignment="Left" Margin="36,32,0,0" VerticalAlignment="Top" Width="93"/>
+        <Label x:Name="lblLastName" Content="" HorizontalAlignment="Left" Margin="129,32,0,0" VerticalAlignment="Top" Width="88"/>
+
+    </Grid>
+</Window>

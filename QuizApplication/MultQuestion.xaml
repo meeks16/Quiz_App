@@ -1,0 +1,26 @@
+﻿<Window x:Class="QuizApplication.MultQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizApplication"
+        mc:Ignorable="d"
+        Title="MultQuestion" Height="350" Width="525
+        ">
+    <Grid>
+        <Label x:Name="lblQuestion" Content="Please enter your question" HorizontalAlignment="Left" Margin="30,39,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtQuestion" HorizontalAlignment="Left" Height="23" Margin="30,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <Label x:Name="lblAnswer" Content="Please enter an answer for checkbox one" HorizontalAlignment="Left" Margin="30,128,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkAnswerOne" Content="" HorizontalAlignment="Left" Margin="30,211,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkAnswerTwo" Content="" HorizontalAlignment="Left" Margin="30,231,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkAnswerThree" Content="" HorizontalAlignment="Left" Margin="30,251,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkAnswerFour" Content="" HorizontalAlignment="Left" Margin="30,271,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCheckboxAnswers" HorizontalAlignment="Left" Height="23" Margin="30,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452"/>
+        <Button x:Name="btnCheckbox" Content="Checkbox One" HorizontalAlignment="Left" Margin="268,131,0,0" VerticalAlignment="Top" Width="92" Click="btnCheckbox_Click"/>
+        <Button x:Name="btnSubmit" Content="Submit Question" HorizontalAlignment="Left" Margin="380,280,0,0" VerticalAlignment="Top" Width="102" Click="btnSubmit_Click"/>
+        <Label x:Name="lblError" Content="" HorizontalAlignment="Left" Margin="268,241,0,0" VerticalAlignment="Top" Foreground="#FFFC0707" Width="214"/>
+        <Label x:Name="lblQNum" Content="Question #" HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblQuestionNumber" Content="" HorizontalAlignment="Left" Margin="104,10,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

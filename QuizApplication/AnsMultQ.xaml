@@ -1,0 +1,18 @@
+﻿<Window x:Class="QuizApplication.AnsMultQ"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AnsMultQ" Height="300" Width="300">
+    <Grid>
+        <Label x:Name="lblQuestion" Content="Question?" HorizontalAlignment="Left" Margin="21,44,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkBox1" Content="Ans1" HorizontalAlignment="Left" Margin="33,82,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkBox2" Content="Ans2" HorizontalAlignment="Left" Margin="33,102,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkBox3" Content="Ans3" HorizontalAlignment="Left" Margin="33,122,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkBox4" Content="Ans4" HorizontalAlignment="Left" Margin="33,142,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="186,217,0,0" VerticalAlignment="Top" Width="75" Click="btnSubmit_Click"/>
+        <Label Content="Progress:" HorizontalAlignment="Left" Margin="21,211,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblQuestionNum" Content="q." HorizontalAlignment="Left" Margin="21,18,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblProgress" Content="%prog" HorizontalAlignment="Left" Margin="79,211,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblError" Content="" HorizontalAlignment="Left" Margin="129,186,0,0" VerticalAlignment="Top" Width="132"/>
+
+    </Grid>
+</Window>

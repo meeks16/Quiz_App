@@ -1,0 +1,21 @@
+﻿<Window x:Class="QuizApplication.SAQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizApplication"
+        mc:Ignorable="d"
+        Title="SAQuestion" Height="350" Width="525
+        ">
+    <Grid>
+        <Label x:Name="lblQuestionNumber" Content="" HorizontalAlignment="Left" Margin="104,23,0,0" VerticalAlignment="Top" Width="209"/>
+        <Label x:Name="lblQuestion" Content="Please enter your question:" HorizontalAlignment="Left" Margin="30,68,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtQuestion" HorizontalAlignment="Left" Height="23" Margin="30,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="448"/>
+        <Label x:Name="lblAnswer" Content="Please enter the correct answer:" HorizontalAlignment="Left" Margin="30,145,0,0" VerticalAlignment="Top" Width="209"/>
+        <TextBox x:Name="txtAnswer" HorizontalAlignment="Left" Height="23" Margin="30,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="448"/>
+        <Button x:Name="btnSubmitQuestion" Content="Submit Question" HorizontalAlignment="Left" Margin="378,268,0,0" VerticalAlignment="Top" Width="100" Click="btnSubmitQuestion_Click"/>
+        <Label x:Name="lblError" Content="" HorizontalAlignment="Left" Margin="246,226,0,0" VerticalAlignment="Top" Width="231" Foreground="#FFFC0A0A"/>
+        <Label x:Name="lblQNum" Content="Question #" HorizontalAlignment="Left" Margin="30,23,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

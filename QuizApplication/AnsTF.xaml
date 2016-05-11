@@ -1,0 +1,16 @@
+﻿<Window x:Class="QuizApplication.AnsTF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AnsTF" Height="300" Width="300">
+    <Grid>
+        <Label x:Name="lblQuestion" Content="Question?" HorizontalAlignment="Left" Margin="28,36,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rBtnTrue" Content="True" HorizontalAlignment="Left" Margin="60,80,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rBtnFalse" Content="False" HorizontalAlignment="Left" Margin="60,111,0,0" VerticalAlignment="Top"/>
+        <Label Content="Progress:" HorizontalAlignment="Left" Margin="28,211,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="185,217,0,0" VerticalAlignment="Top" Width="75" Click="btnSubmit_Click"/>
+        <Label x:Name="lblQuestionNum" Content="q." HorizontalAlignment="Left" Margin="28,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblProgress" Content="%prog" HorizontalAlignment="Left" Margin="86,211,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblError" Content="" HorizontalAlignment="Left" Margin="136,173,0,0" VerticalAlignment="Top" Width="124"/>
+
+    </Grid>
+</Window>
